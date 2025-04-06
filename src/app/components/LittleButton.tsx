@@ -1,3 +1,4 @@
+
 export default function LittleButton({text} : {text: 'more' | 'send'}) {
   return (
     <div className="m-10">

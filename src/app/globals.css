@@ -1,10 +1,5 @@
 @import "tailwindcss";
 
-@layer components {
-  .nav-clip {
-    clip-path: polygon(0 0, 100% 0, 100% 10%, 0, 100%)
-  }
-}
 
 :root {
   --customBlack: #141414;
@@ -31,5 +26,3 @@
   --font-md-plus: 2.5rem;
   --font-lg: 3rem;
 }
-
-
