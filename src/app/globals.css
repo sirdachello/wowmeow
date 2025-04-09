@@ -3,6 +3,7 @@
 
 :root {
   --customBlack: #141414;
+  --customBackground: #222222;
   --customWhite: #F8F8F8;
   --customGray: #D3D3D3;
   --customGray-dark: #464646;
@@ -13,7 +14,13 @@
 
 
 @theme {
+  --breakpoint-1300: 1300px;
+  --breakpoint-950: 950px;
+  --breakpoint-520: 520px;
+
+
   --color-customBlack: #141414;
+  --color-customBackground: #222222;
   --color-customWhite: #F8F8F8;
   --color-customGray: #D3D3D3;
   --color-customGray-dark: #464646;

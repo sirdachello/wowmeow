@@ -1,10 +1,18 @@
-
-export default function LittleButton({text} : {text: 'more' | 'send'}) {
+export default function LittleButton({
+  text,
+  type,
+}: {
+  text: "more" | "send";
+  type: "button" | "submit";
+}) {
   return (
-    <div className="m-10">
-      <button className="cursor-pointer bg-customYellow before:[clip-path:polygon(3%_8%,100%_0,97%_92%,0_100%)] before:transition-all before:duration-200 hover:before:[clip-path:polygon(0_0,97%_8%,100%_100%,2%_92%)] hover:bg-customYellow-highlight before:bg-customBlack relative h-[66px] w-[280px] transition-colors duration-200 before:absolute before:inset-[50%] before:z-[-1] before:block before:h-[90px] before:w-[304px] before:translate-x-[-50%] before:translate-y-[-50%]">
+    <div className="before:bg-customBlack relative before:absolute before:inset-[-12px] before:block before:h-[90px] before:w-[304px] before:transition-all before:duration-200 before:[clip-path:polygon(3%_8%,100%_0,97%_92%,0_100%)] focus-within:before:[clip-path:polygon(0_0,97%_8%,100%_100%,2%_92%)] hover:before:[clip-path:polygon(0_0,97%_8%,100%_100%,2%_92%)]">
+      <button
+        type={type}
+        className={`focus:bg-customYellow-highlight hover:bg-customYellow-highlight relative z-10 h-[66px] w-[280px] cursor-pointer transition-colors duration-200 ${text === "send" ? "bg-customGray-dark" : "bg-customYellow"} `}
+      >
         <span className="text-(length:--font-md) font-bold uppercase">
-        {text}
+          {text}
         </span>
       </button>
     </div>
