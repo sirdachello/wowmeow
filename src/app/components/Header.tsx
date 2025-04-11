@@ -7,7 +7,7 @@ import { socialMediaLinks } from "../lib/socialMediaLinks";
 
 // Images
 import Logo from "public/images/wowLogo.png";
-import nav_catThumbsUp from "public/images/nav-catThumbsUp.svg";
+import nav_catThumbsUp from "public/images/nav-catThumbsUp.png";
 import nav_socialbox from "public/images/nav-socialbox.svg";
 
 // Components
@@ -43,6 +43,8 @@ export default function Header() {
         </nav>
         <div className="1300:flex relative top-1 left-1 hidden items-start">
           <Image
+            width={56}
+            height={56}
             src={nav_catThumbsUp}
             alt="A smiling cat holding a controller, giving the thumbs up."
           ></Image>

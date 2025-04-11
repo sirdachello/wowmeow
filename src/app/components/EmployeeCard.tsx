@@ -1,10 +1,11 @@
 "use client";
 import Image from "next/image";
-import { Employee } from "../about/page";
 import { useState } from "react";
+import { Employee } from "../lib/employeeInfo";
 
 export default function EmployeeCard({ employee }: { employee: Employee }) {
   const [open, setOpen] = useState(false);
+  const [firstName, lastName] = [...employee.name.split(' ')]
 
   return (
     <div
@@ -23,13 +24,14 @@ export default function EmployeeCard({ employee }: { employee: Employee }) {
         />
       </div>
       <div
-        className={`bg-customGray-dark text-customWhite relative z-10 flex w-full flex-col items-center justify-center pt-[5px] pb-[5px] transition-all duration-300 [clip-path:polygon(0_0,100%_4%,100%_100%,0_100%)] group-hover:translate-y-6 sm:pt-[20px] sm:pb-[15px] sm:group-hover:translate-y-12 xl:pt-[40px] xl:pb-[25px] ${open ? "translate-y-6 sm:translate-y-12" : ""}`}
+        className={`bg-customBlack text-customWhite relative z-10 flex w-full flex-col items-center justify-center pt-[5px] pb-[5px] transition-all duration-300 [clip-path:polygon(0_0,100%_4%,100%_100%,0_100%)] group-hover:translate-y-6 sm:pt-[20px] sm:pb-[15px] sm:group-hover:translate-y-12 xl:pt-[40px] xl:pb-[25px] ${open ? "translate-y-6 sm:translate-y-12" : ""}`}
       >
-        <h3 className="mb-[5px] px-2.5 text-center font-bold uppercase sm:mb-[10px] sm:text-2xl sm:leading-8 xl:text-(length:--font-md)">
-          {employee.name}
+        <h3 className="mb-[5px] px-2.5 text-center font-bold text-wrap uppercase sm:mb-[10px] sm:text-2xl sm:leading-8 xl:text-(length:--font-md)">
+          {firstName} <br /> {lastName}
         </h3>
         <p className="text-[12px] font-normal sm:text-(length:--font-sm)">
-          {employee.title}
+          <span className={`${employee.short_title ? 'max-lg:hidden' : ""}`}>{employee.title}</span>
+          <span className={`${employee.short_title ? 'min-lg:hidden' : ""}`}>{employee.short_title}</span>
         </p>
       </div>
       <Image

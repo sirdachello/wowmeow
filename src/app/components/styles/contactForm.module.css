@@ -1,16 +1,20 @@
 .inputStyling {
-    width: 600px;
+  width: clamp(200px, 41vw, 788px);
   background-color: var(--color-customBlack);
   color: var(--color-customWhite);
   clip-path: polygon(0 0, 100% 0, 98% 100%, 0 100%);
   font-size: 1rem;
   padding-block: 1.15rem;
-  padding-left: 20px;
+  padding-left: 35px;
   position: relative;
   z-index: 10;
-
 }
 
+@media (max-width: 768px) {
+  .inputStyling {
+    min-width: 300px;
+  }
+}
 
 .select {
     appearance: none;
@@ -49,6 +53,8 @@ label.inputWrapper:has(textarea)::after {
 .inputWrapper:has(textarea:focus)::after {
   background-color: var(--color-customGray-dark);
 }
+
+.inputWrapper.error::after,
 .inputWrapper:has(input:user-invalid)::after,
 .inputWrapper:has(select:user-invalid)::after,
 .inputWrapper:has(textarea:user-invalid)::after {
@@ -83,19 +89,12 @@ label.inputWrapper:has(textarea)::after {
     content: '';
     display: block;
     position: absolute;
-    top: 3px;
     left: -8px;
     width: 56px;
     height: 56px;
     background-color: var(--color-customBlack);
     clip-path:polygon(3% 8%,100% 0,97% 92%,0 100%);
-    transition: clip-path 300ms;
 }
-.customCheckbox:hover::after,
-.customCheckbox:focus::after {
-    clip-path:polygon(0 0,97% 8%,100% 100%,2% 92%);
-}
-
 .checkMark {
     background: url('public/images/ContactsPage/checkMark.svg') center/contain no-repeat;
     position: absolute;
@@ -107,6 +106,14 @@ label.inputWrapper:has(textarea)::after {
     transform: scale(0);
     translate: -20% 50%;
     transition: all 300ms;
+}
+
+@media (max-width: 640px) {
+  .checkMark {
+    width: 45px;
+    height: 40px;
+    left: 0px;
+  }
 }
 
 input:checked ~ .checkMark  {

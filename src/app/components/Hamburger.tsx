@@ -10,7 +10,7 @@ import { usePathname } from "next/navigation";
 import './animations/menuAnimations.css'
 
 // images
-import nav_catThumbsUp from "public/images/nav-catThumbsUp.svg";
+import nav_catThumbsUp from "public/images/nav-catThumbsUp.png";
 import nav_socialbox from "public/images/nav-socialbox.svg";
 
 // data
@@ -110,6 +110,8 @@ export default function HamburgerMenu() {
           >
             <Image
               src={nav_catThumbsUp}
+              width={70}
+              height={70}
               alt="A smiling cat holding a controller, giving the thumbs up."
             />
             <div className="relative flex shrink-0">

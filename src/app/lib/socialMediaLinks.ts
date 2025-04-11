@@ -14,11 +14,18 @@ type Media = {
     image: StaticImageData
 }
 
+  export const BASE_MEDIA_LINKS = {
+    linkedin: "https://linkedin.com",
+    x: "https://x.com",
+    facebook: "https://facebook.com",
+    instagram: "https://instagram.com"
+  }
+
   export const socialMediaLinks: Media[] = [
-    { label: "LinkedIn", href: "https://linkedin.com", image: linkedin },
-    { label: "Twitter", href: "https://x.com", image: x },
-    { label: "Facebook", href: "https://facebook.com", image: facebook },
-    { label: "Instagram", href: "https://instagram.com", image: instagram },
+    { label: "LinkedIn", href: BASE_MEDIA_LINKS.linkedin, image: linkedin },
+    { label: "Twitter", href: BASE_MEDIA_LINKS.x, image: x },
+    { label: "Facebook", href: BASE_MEDIA_LINKS.facebook, image: facebook },
+    { label: "Instagram", href: BASE_MEDIA_LINKS.instagram, image: instagram },
   ];
 
   export const socialMediaLinksWhite: Media[] = [
