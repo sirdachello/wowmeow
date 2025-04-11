@@ -1,4 +1,4 @@
-import aboutBackground from "public/images/AboutPage/aboutBackground.png";
+import aboutBackground from "public/images/backgrounds/aboutBackground.png";
 import catSalute from "public/images/AboutPage/Cats/catSalute.png";
 import catArtist from "public/images/AboutPage/Cats/catArtist.png";
 import catGamer from "public/images/AboutPage/Cats/catGamer.png";
