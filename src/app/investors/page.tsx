@@ -9,7 +9,7 @@ export default function InvestorsPage() {
       <HeaderBackgroundImage
         src={investorsBackgroundImage}
         alt={
-          "A group of professional cats working diligently to deliver a project"
+          "Three cats cheering on the account of stocks going up."
         }
       />
       <section>

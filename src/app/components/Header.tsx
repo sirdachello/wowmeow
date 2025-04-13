@@ -59,7 +59,7 @@ export default function Header() {
                     href={media.href}
                   >
                     <Image
-                      className="transition-transform duration-150 hover:rotate-12"
+                      className="transition-transform duration-150 hover:scale-125"
                       src={media.image}
                       alt={`${media.label} logo`}
                       width={30}

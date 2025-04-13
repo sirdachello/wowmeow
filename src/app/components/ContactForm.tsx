@@ -7,7 +7,6 @@ import styles from "./styles/contactForm.module.css";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-import LittleButton from "./LittleButton";
 import FormButton from "./FormButton";
 import catGamerThumbsUp from "public/images/ContactsPage/catThumbsUp.png";
 import catSomethingWentWrong from "public/images/ContactsPage/catSomethingWentWrong.png";
@@ -111,7 +110,7 @@ export default function ContactForm() {
       className="relative pb-3"
     >
       {result === "success" && (
-        <div className="text-customWhite bg-customBackground absolute z-[60] flex h-full w-full flex-col items-center justify-center gap-8">
+        <div className="text-customWhite bg-customBackground absolute z-[20] flex h-full w-full flex-col items-center justify-center gap-8">
           <h3 className="text-center text-(length:--font-md) font-bold uppercase">
             Thank you!
           </h3>
@@ -126,7 +125,7 @@ export default function ContactForm() {
         </div>
       )}
       {result === "error" && (
-        <div className="text-customError bg-customBackground absolute z-[60] flex h-full w-full flex-col items-center justify-center gap-8">
+        <div className="text-customError bg-customBackground absolute z-[20] flex h-full w-full flex-col items-center justify-center gap-8">
           <h3 className="text-center text-(length:--font-md) font-bold uppercase">
             Something went wrong!
           </h3>

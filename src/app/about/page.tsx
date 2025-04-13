@@ -60,12 +60,12 @@ export default function AboutPage() {
           <ul className="flex flex-wrap items-center justify-center gap-x-[10px] gap-y-[50px] md:gap-y-[50px] xl:gap-x-[50px]">
             {employees.map((employee) => {
               return (
-                <li key={employee.id} className="mx-auto">
+                <li key={employee.id}>
                   <EmployeeCard employee={employee} />
                 </li>
               );
             })}
-            <li className="group relative m-auto">
+            <li className="relative min-sm:ml-[20px] 2xl:ml-0">
               <JoinCard />
             </li>
           </ul>

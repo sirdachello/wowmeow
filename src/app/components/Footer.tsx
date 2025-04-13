@@ -22,7 +22,7 @@ export default function Footer() {
                       rel="noopener noreferrer"
                     >
                       <Image
-                        className="transition-transform duration-150 hover:rotate-[-12deg]"
+                        className="transition-transform duration-150 hover:scale-125"
                         src={media.image}
                         alt={`${media.label} logo`}
                         width={40}
