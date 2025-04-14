@@ -1,0 +1,25 @@
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+p,
+li {
+  line-height: 30px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+body {
+  background: var(--color-customWhite);
+}
+nav > ol > li:hover {
+  color: var(--color-customYellow-highlight);
+}
+nav > ol > li {
+  text-transform: uppercase;
+}

@@ -5,7 +5,7 @@ import { menuItems } from "../lib/routingLinks";
 
 export default function Footer() {
   return (
-    <footer className="bg-customBlack  md:px-[60px] pt-[25px] pb-[10px]">
+    <footer className="bg-customBlack  md:px-[60px] pt-[25px] pb-[10px] z-[3] relative">
       <div className="mx-auto mb-[35px] flex max-w-[1920px] justify-between">
         <div className="max-950:justify-around max-950:w-full max-520:flex-col-reverse flex max-520:gap-[30px] gap-[60px]">
           <div className="max-950:flex max-950:flex-col max-950:justify-between">
@@ -83,13 +83,13 @@ export default function Footer() {
         <div className="flex gap-[20px] 950:gap-[40px] max-md:justify-center">
           <Link
             className="text-customWhite hover:text-customYellow 950:text-(length:--font-sm-plus) uppercase transition-colors duration-300"
-            href={"/TOS"}
+            href={"/privacy"}
           >
             Privacy policy
           </Link>
           <Link
             className="text-customWhite hover:text-customYellow 950:text-(length:--font-sm-plus) uppercase transition-colors duration-300"
-            href={"/TOS"}
+            href={"/terms"}
           >
             terms & conditions
           </Link>

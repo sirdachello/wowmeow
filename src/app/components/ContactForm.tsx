@@ -265,7 +265,7 @@ export default function ContactForm() {
           <span>
             I agree to{" "}
             <Link
-              href={"/TOS"}
+              href={"/privacy"}
               className="text-customYellow hover:underline"
               tabIndex={result !== null ? -1 : 0}
               aria-hidden={result === null ? false : true}

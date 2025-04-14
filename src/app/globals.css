@@ -34,3 +34,7 @@
   --font-md-plus: 2.5rem;
   --font-lg: 3rem;
 }
+
+html {
+  scroll-behavior: smooth;
+}

@@ -15,10 +15,10 @@ type Media = {
 }
 
   export const BASE_MEDIA_LINKS = {
-    linkedin: "https://linkedin.com",
-    x: "https://x.com",
-    facebook: "https://facebook.com",
-    instagram: "https://instagram.com"
+    linkedin: "https://www.linkedin.com/company/100658080",
+    x: "https://x.com/WowMeowGames",
+    facebook: "https://www.facebook.com/people/WowMeowGames/61556235676212",
+    instagram: "https://www.instagram.com/wow_meow_games"
   }
 
   export const socialMediaLinks: Media[] = [

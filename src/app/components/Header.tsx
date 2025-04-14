@@ -13,14 +13,13 @@ import nav_socialbox from "public/images/nav-socialbox.svg";
 // Components
 import HamburgerComponent from "./Hamburger";
 
-
 export default function Header() {
   return (
-    <header className="bg-customBlack h-[80px]">
+    <header className="bg-customBlack h-[80px] relative">
       <div className="relative mx-auto flex max-w-[1920px] items-center justify-between px-[20px] sm:px-[60px]">
         <Link href={"/"}>
           <Image
-            className="relative top-3 left-4 transition-transform duration-300 hover:scale-[140%] sm:top-4 sm:scale-[120%]"
+            className="relative top-3 left-4 z-[1] transition-transform duration-300 hover:scale-[140%] sm:top-4 sm:scale-[120%]"
             src={Logo}
             height={80}
             alt="WoW Meow logo"
