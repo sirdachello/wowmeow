@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Hamburger from "hamburger-react";
+import {Pivot as Hamburger} from "hamburger-react";
 import { Link } from "../lib/privacyLinks";
 
 export default function TableOfContentsButton({links}:{links: Link[]}) {
@@ -37,7 +37,7 @@ export default function TableOfContentsButton({links}:{links: Link[]}) {
           />
         </div>
       </div>
-      <div className="fixed right-[40px] bottom-[40px] z-[3]">
+      <div className="fixed right-[40px] bottom-[40px] z-[3] bg-customGray-dark/[50%] rounded-[50%]">
         <Hamburger
           toggled={open}
           toggle={setOpen}

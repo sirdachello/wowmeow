@@ -1,9 +1,9 @@
 "use client";
 
-import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 
-import "./styles/scrollerstyles.css";
+//requited to be a module to contain the embla style changes (if not a module, /games page header slider breaks)
+import styles from "./styles/scrollerstyles.module.css";
 import Image from "next/image";
 
 import AutoScroll from "embla-carousel-auto-scroll";
@@ -12,7 +12,7 @@ import { environmentItem } from "../lib/environmentArtData";
 import { gameObjectItem } from "../lib/gameObjectArtData";
 
 export function EmblaCarousel({imageData, direction}: {imageData: characterItem[] | environmentItem[] | gameObjectItem[], direction: 'forward' | 'backward'}) {
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
     AutoScroll({
       startDelay: 500,
       speed: 1,
@@ -22,12 +22,14 @@ export function EmblaCarousel({imageData, direction}: {imageData: characterItem[
     }),
   ]);
 
+
+
   return (
-    <div className="embla py-[50px]" ref={emblaRef}>
-      <div className="embla__container">
+    <div className={`${styles.embla} py-[50px]`} ref={emblaRef}>
+      <div className={`${styles.embla__container}`}>
         {imageData.map((character) => (
-          <div key={character.id} className="embla__slide relative shrink-0 grow basis-[150px] hover:z-20 sm:basis-[25%] md:basis-[20%] lg:basis-[15%]">
-            <div className="embla__slide__inner">
+          <div key={character.id} className={`${styles.embla__slide} relative shrink-0 grow hover:z-20`}>
+            <div className={`${styles.embla__slide__inner}`}>
               <Image src={character.src} alt={character.alt} />
             </div>
           </div>
