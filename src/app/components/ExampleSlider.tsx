@@ -12,7 +12,7 @@ import { environmentItem } from "../lib/environmentArtData";
 import { gameObjectItem } from "../lib/gameObjectArtData";
 
 export function EmblaCarousel({imageData, direction}: {imageData: characterItem[] | environmentItem[] | gameObjectItem[], direction: 'forward' | 'backward'}) {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, dragFree: true }, [
     AutoScroll({
       startDelay: 500,
       speed: 1,

@@ -1,0 +1,23 @@
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+    flex: 0 0 100%; /* 1 slide on mobile */
+    min-width: 0;
+  }
+  
+  @media (min-width: 1280px) {
+    .embla__slide {
+      flex: 0 0 50%; /* 2 slides on tablet */
+    }
+  }
+  
+  @media (min-width: 1535px) {
+    .embla__slide {
+      flex: 0 0 33.333333%; /* 3 slides on desktop */
+    }
+  }

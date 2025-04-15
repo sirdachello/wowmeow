@@ -29,8 +29,8 @@ type Media = {
   ];
 
   export const socialMediaLinksWhite: Media[] = [
-    { label: "LinkedIn", href: "https://linkedin.com", image: linkedin_white },
-    { label: "Twitter", href: "https://x.com", image: x_white },
-    { label: "Facebook", href: "https://facebook.com", image: facebook_white },
-    { label: "Instagram", href: "https://instagram.com", image: instagram_white },
+    { label: "LinkedIn", href: BASE_MEDIA_LINKS.linkedin, image: linkedin_white },
+    { label: "Twitter", href: BASE_MEDIA_LINKS.x, image: x_white },
+    { label: "Facebook", href: BASE_MEDIA_LINKS.facebook, image: facebook_white },
+    { label: "Instagram", href: BASE_MEDIA_LINKS.instagram, image: instagram_white },
   ];
