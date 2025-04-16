@@ -21,7 +21,11 @@ export default function GameCard({ game }: { game: ourGamesBlockGame }) {
           {game.storeGameLinks && (
             <div className="bg-customBlack/[60%] absolute bottom-0 left-0 flex h-[25%] w-[55%] items-center gap-[10px] pl-[20px] [clip-path:polygon(0_0,85%_0,100%_60%,100%_100%,0_100%)]">
               {game.storeGameLinks.googlePlay && (
-                <a href={game.storeGameLinks.googlePlay} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={game.storeGameLinks.googlePlay}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Image
                     src={googlePlayLogo}
                     height={30}
@@ -31,7 +35,11 @@ export default function GameCard({ game }: { game: ourGamesBlockGame }) {
                 </a>
               )}
               {game.storeGameLinks.appStore && (
-                <a href={game.storeGameLinks.appStore} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={game.storeGameLinks.appStore}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Image
                     src={appStoreLogo}
                     height={30}
@@ -43,11 +51,21 @@ export default function GameCard({ game }: { game: ourGamesBlockGame }) {
             </div>
           )}
         </div>
-        <div className="flex flex-col items-center gap-[20px] px-[20px] py-[20px] md:gap-[40px] md:px-[40px] md:py-[30px]">
-          <p className="md:leading-[30px]">{game.description}</p>
-          <Link href={`games/${game.id}`}>
-            <MoreButton />
-          </Link>
+        <div className="flex min-h-[220px] flex-col items-center gap-[20px] px-[20px] py-[20px] md:gap-[40px] md:px-[40px] md:py-[30px]">
+          <p className="md:leading-[30px]">
+            {" "}
+            {game.description.split("\n").map((line, index) => (
+              <span key={index}>
+                {line}
+                <br />
+              </span>
+            ))}
+          </p>
+          <div className="absolute bottom-6 md:bottom-12">
+            <Link href={`games/${game.id}`}>
+              <MoreButton />
+            </Link>
+          </div>
         </div>
       </div>
     </div>

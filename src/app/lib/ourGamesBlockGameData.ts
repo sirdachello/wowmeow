@@ -43,7 +43,7 @@ export const ourGamesBlockInfo: ourGamesBlockGame[] = [
   {
     id: "catcommanders",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+      `THE CAT WAR BEGINS! \n Battle cats in tanks are ready to smash everything! \n Build your steel army, crush enemies, and become the top commander!`,
     image: {
       src: catCommandersThumb,
       alt: 'Two military-looking feline characters from "cat commanders: tank wars"',
@@ -53,7 +53,7 @@ export const ourGamesBlockInfo: ourGamesBlockGame[] = [
   {
     id: "drinkmaster",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+      `Have you ever dreamed of owning your own bar? \n In our game, you have the chance to become a true bar master!`,
     image: {
       src: drinkMasterThumb,
       alt: 'logo for the game "Drink Master: Tap & serve"',

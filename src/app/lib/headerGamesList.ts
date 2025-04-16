@@ -1,43 +1,50 @@
-import cyberCatsBackground from "public/images/GamesPage/CyberCatsBackground.png";
-import samuraiCatBackground from "public/images/GamesPage/SamuraiCatBackground.png";
-import monsterMergeBackground from "public/images/GamesPage/MonsterMergeBackground.png";
-import drinkMasterBackground from "public/images/GamesPage/DrinkMasterBackground.png";
-import catCommandersBackground from "public/images/GamesPage/CatCommandersBackground.png";
+import cyberCatsBackground from "public/images/backgrounds/gameBackgrounds/CyberCatsBackground.png";
+import samuraiCatBackground from "public/images/backgrounds/gameBackgrounds/SamuraiCatBackground.png";
+import monsterMergeBackground from "public/images/backgrounds/gameBackgrounds/MonsterMergeBackground.png";
+import drinkMasterBackground from "public/images/backgrounds/gameBackgrounds/DrinkMasterBackground.png";
+import catCommandersBackground from "public/images/backgrounds/gameBackgrounds/CatCommandersBackground.png";
 
-  
+  export const gamesBackgroundImages = {
+    cybercats: cyberCatsBackground,
+    samuraicat: samuraiCatBackground,
+    monstermerge: monsterMergeBackground,
+    drinkmaster: drinkMasterBackground,
+    catcommanders: catCommandersBackground,
+  } 
+
   export const headerGamesList = [
     {
-      id: 1,
+      id: 'cybercats',
       title: 'Cybercats: World',
-      image:  cyberCatsBackground,
+      image:  gamesBackgroundImages.cybercats,
       link: '/games/cybercats',
       alt: 'A scene from game Cybercats: Word. Cyberpunk-looking warehouse',
     },
     {
-      id: 2,
+      id: 'samuraicat',
       title: 'Samurai cat',
-      image:  samuraiCatBackground,
+      image:  gamesBackgroundImages.samuraicat,
       link: '/games/samuraicat',
-      alt: 'Am image of a samurai cat, wielding two catanas and fighting monsters. SamuRRR cat logo in the center of the image.',
+      alt: 'An image of a samurai cat, wielding two catanas and fighting monsters. SamuRRR cat logo in the center of the image.',
     },
     {
-      id: 3,
+      id: 'monstermerge',
       title: 'Monster Merge',
-      image:  monsterMergeBackground,
+      image:  gamesBackgroundImages.monstermerge,
       link: '/games/monstermerge',
       alt: 'A few vibrant, cute monsters with "Monsters in the Box" logo at the center.'
     },
     {
-      id: 4,
+      id: 'drinkmaster',
       title: 'Drink Master',
-      image:  drinkMasterBackground,
+      image:  gamesBackgroundImages.drinkmaster,
       link: '/games/drinkmaster',
       alt: 'Fox Bartender standing at the bar, "Drink Master: Tap and Serve" logo in the center'
     },
     {
-      id: 5,
+      id: 'catcommanders',
       title: 'Cat Commanders',
-      image:  catCommandersBackground,
+      image:  gamesBackgroundImages.catcommanders,
       link: '/games/catcommanders',
       alt: 'Six military-looking cats from the game "Cat Commanders: Tank Wars"'
     },

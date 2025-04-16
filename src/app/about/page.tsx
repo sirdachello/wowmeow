@@ -52,7 +52,7 @@ export default function AboutPage() {
           />
         </div>
       </section>
-      <section className="bg-customWhite px-[8vw] pt-[80px] pb-[100px] 2xl:px-[240px]">
+      <section className="bg-customWhite px-[7vw] pt-[80px] pb-[100px] 2xl:px-[240px]">
         <h2 className="text-customBlack mb-[40px] text-center text-(length:--font-lg) font-bold uppercase">
           Our Team
         </h2>

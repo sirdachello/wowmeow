@@ -6,13 +6,9 @@ import styles from "./styles/outGameScrollerStyles.module.css";
 
 import arrowPrev from "public/images/GamesPage/ArrowPrev.png";
 import arrowNext from "public/images/GamesPage/ArrowNext.png";
-import appStoreLogo from "public/images/icons/stores/AppStoreLogo.png";
-import googlePlayLogo from "public/images/icons/stores/googlePlayLogo.png";
 
 import Image from "next/image";
 import { ourGamesBlockInfo } from "../lib/ourGamesBlockGameData";
-import Link from "next/link";
-import MoreButton from "./MoreButton";
 import GameCard from "./GameCard";
 
 export default function OurGamesScroller() {

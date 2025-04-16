@@ -1,0 +1,58 @@
+.embla {
+    overflow-x: hidden;
+    overflow-y: visible;
+    position: relative;
+  }
+  .embla__container {
+    display: flex;
+  }
+  .embla__slide {
+    min-width: 0;
+    position: relative;
+    z-index: 1;
+    transition: z-index 0.01s;
+  }
+
+  .embla__slide__inner {
+    transition: transform 0.3s ease;
+    position: relative;
+    transform: scale(1.05);
+    max-height: 540px;
+  }
+
+  .embla__slide:hover .embla__slide__inner {
+    transform: scale(1.12);
+    
+  }
+
+  .embla__slide:hover {
+    z-index: 10;
+  }
+
+  .embla .embla__container .embla__slide {
+    flex: 0 0 60% !important;
+    
+  }
+
+  @media (min-width: 440px) {
+    .embla .embla__container .embla__slide {
+      flex: 0 0 50% !important;
+    }
+  }
+  @media (min-width: 640px) {
+    .embla .embla__container .embla__slide {
+      flex: 0 0 30% !important;
+    }
+    .embla__container {
+        justify-content: center;
+      }
+  }
+
+  @media (min-width: 1024px) {
+    .embla .embla__container .embla__slide {
+      flex: 0 0 20% !important;
+    }
+    .embla__slide:hover .embla__slide__inner {
+      transform: scale(1.08);
+    }
+  }

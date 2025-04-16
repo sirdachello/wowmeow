@@ -29,6 +29,7 @@ import Kliuchev from "public/images/AboutPage/Employees/Kliuchev.jpg"
 import Kholod from "public/images/AboutPage/Employees/Kholod.png"
 import Beztsinnyy from "public/images/AboutPage/Employees/Beztsinnyy.png"
 import Zhezher from "public/images/AboutPage/Employees/Zhezher.png"
+import Poliushko from "public/images/AboutPage/Employees/Poliushko.jpg"
 
 export type Employee = {
   id: string;
@@ -103,7 +104,7 @@ export const employees: Employee[] = [
     name: "Danylo Poliushko",
     title: "Unity Developer",
     catImage: PoliushkoCat,
-    employeePhoto: Kliuchev,
+    employeePhoto: Poliushko,
   },
   {
     id: "12",
