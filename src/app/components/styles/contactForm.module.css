@@ -18,7 +18,7 @@
 
 .select {
     appearance: none;
-    background-image: url("public/images/ContactsPage/selectArrowDown.svg");
+    background-image: url("../../../../public/images/ContactsPage/selectArrowDown.svg");
     background-repeat: no-repeat;
     background-position-x: 90%;
     background-position-y: 50%;
@@ -96,7 +96,7 @@ label.inputWrapper:has(textarea)::after {
     clip-path:polygon(3% 8%,100% 0,97% 92%,0 100%);
 }
 .checkMark {
-    background: url('public/images/ContactsPage/checkMark.svg') center/contain no-repeat;
+    background: url('../../../../public/images/ContactsPage/checkMark.svg') center/contain no-repeat;
     position: absolute;
     left: -5px;
     top: 0;
