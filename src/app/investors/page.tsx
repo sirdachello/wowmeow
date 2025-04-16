@@ -41,7 +41,7 @@ export default function InvestorsPage() {
         <p>
           Want to learn more about our projects and collaboration opportunities?
         </p>
-        <p> Leave your details, and we'll share more information.</p>
+        <p> Leave your details, and we&apos;ll share more information.</p>
         
       <Image
         className="mx-auto mt-[70px]"

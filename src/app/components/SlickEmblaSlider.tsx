@@ -14,13 +14,13 @@ import { characterItem } from "../lib/characterArtData";
 import { environmentItem } from "../lib/environmentArtData";
 import { gameObjectItem } from "../lib/gameObjectArtData";
 
-const gameStyleMap: Record<string, any> = {
-    cybercats: cybercatstyles,
-    catcommanders: catcommandersstyles,
-    drinkmaster: drinkmastersstyles,
-    monstermerge: monstermergestyles,
-    samuraicat: samuraicatstyles,
-  };
+const gameStyleMap: Record<string, { [key: string]: string }> = {
+  cybercats: cybercatstyles,
+  catcommanders: catcommandersstyles,
+  drinkmaster: drinkmastersstyles,
+  monstermerge: monstermergestyles,
+  samuraicat: samuraicatstyles,
+};
 
 export function SlickEmblaSlider({
   gameName,
@@ -31,7 +31,7 @@ export function SlickEmblaSlider({
   imageData: characterItem[] | environmentItem[] | gameObjectItem[];
   direction: "forward" | "backward";
 }) {
-  const [emblaRef, emblaApi] = useEmblaCarousel(
+  const [emblaRef] = useEmblaCarousel(
     { loop: true, dragFree: true },
     [
       AutoScroll({

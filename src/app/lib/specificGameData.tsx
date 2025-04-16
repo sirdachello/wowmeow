@@ -1,4 +1,3 @@
-
 import monstermerge1 from "public/images/Games/monsterBox/Mask group-1.png";
 import monstermerge2 from "public/images/Games/monsterBox/Mask group-2.png";
 import monstermerge3 from "public/images/Games/monsterBox/Mask group.png";
@@ -202,12 +201,12 @@ export const gameSpecificData: gameSpecifics = {
     presentationalImages: monsterMergeArt,
     description: (
       <div className="text-customWhite leading-[30px] uppercase text-[14px] lg:text-(length:--font-sm)">
-        <p>Do you enjoy watermelon-style game mechanics? Then you'll love this one!</p>
-        <p>Download "Monster Merge: Puzzle Brain Test" now and put your mind to the test! Dive into an adventure with adorable monsters in Monster Merge: Puzzle Brain Test! Explore a world of dynamic monster merging and strategic gameplay.</p>
+        <p>Do you enjoy watermelon-style game mechanics? Then you&apos;ll love this one!</p>
+        <p>Download &quot;Monster Merge: Puzzle Brain Test&quot; now and put your mind to the test! Dive into an adventure with adorable monsters in Monster Merge: Puzzle Brain Test! Explore a world of dynamic monster merging and strategic gameplay.</p>
         <p>Combine cute monsters to earn points and create even bigger ones! Compete with other players for the highest score. Use boosters to score even more! Tap to drop charming monsters and merge them to make even larger ones. Compete globally to create the ultimate monster. Keep them in the box to win!</p>
         <p>Game Features:</p>
         <ul>
-          <li><p>Controls: Classic “watermelon” game mechanics — simple and intuitive. Just tap to control how the monsters fall and merge.</p></li>
+          <li><p>Controls: Classic &quot;watermelon&quot; game mechanics — simple and intuitive. Just tap to control how the monsters fall and merge.</p></li>
           <li><p>Exciting competitions, daily challenges, and new adventures</p></li>
           <li><p>Each day brings a new challenge. Compete with friends to see who can last the longest.</p></li>
           <li><p>Train and test your brain</p></li>
@@ -233,7 +232,7 @@ export const gameSpecificData: gameSpecifics = {
     presentationalImages: catcommandersArt,
     description: (
       <div className="text-customWhite leading-[30px] uppercase text-[14px] lg:text-(length:--font-sm)">
-        <p>Become a legendary commander in "Cat Commanders: Tank Wars"!</p>
+        <p>Become a legendary commander in &quot;Cat Commanders: Tank Wars&quot;!</p>
         <p>Lead an army of charismatic feline commanders in thrilling tactical battles! Build your base, upgrade your tanks, and conquer the raid map. Your strategies will determine the outcome of every battle!</p>
         <p>Game Features:</p>
         <ul>
@@ -256,14 +255,14 @@ export const gameSpecificData: gameSpecifics = {
           <li><p>Focus on planning and watch your units fight. Victory depends on your smart decisions.</p></li>
         </ul>
 
-        <p>Why Choose "Cat Commanders: Tank Wars"?</p>
+        <p>Why Choose &quot;Cat Commanders: Tank Wars&quot;?</p>
         <ul className="list-disc pl-6">
           <li>A unique theme with charming cat commanders</li>
           <li>A mix of auto battles and deep strategic gameplay</li>
           <li>Colorful graphics and well-designed units for fans of tactical games</li>
           <li>The ability to grow your base and adapt your army to new challenges</li>
         </ul>
-        <p>Build, evolve, and conquer. In "Cat Commanders: Tank Wars", every battle tells the story of your triumph. Become the ultimate tank commander today!</p>
+        <p>Build, evolve, and conquer. In &quot;Cat Commanders: Tank Wars&quot;, every battle tells the story of your triumph. Become the ultimate tank commander today!</p>
       </div>
     )
   },
@@ -276,7 +275,7 @@ export const gameSpecificData: gameSpecifics = {
     presentationalImages: samuraicatArt,
     description: (
       <div className="text-customWhite leading-[30px] uppercase text-[14px] lg:text-(length:--font-sm)">
-        <p>Welcome to the mystical world of "Samurai Cat". In this thrilling survival game, you’ll step into the paws of a brave samurai cat on an extraordinary adventure to rescue his beloved, who has been kidnapped by sinister demons. Your mission is not only to survive in these perilous lands but to save your love from the clutches of darkness.</p>
+        <p>Welcome to the mystical world of &quot;Samurai Cat&quot;. In this thrilling survival game, you&apos;ll step into the paws of a brave samurai cat on an extraordinary adventure to rescue his beloved, who has been kidnapped by sinister demons. Your mission is not only to survive in these perilous lands but to save your love from the clutches of darkness.</p>
         <p>Game Features:</p>
         <ul>
           <li>Samurai Cat in Action</li>
@@ -290,7 +289,7 @@ export const gameSpecificData: gameSpecifics = {
           <li>Vibrant Graphics and Soundtrack</li>
         </ul>
         <p>Immerse yourself in a stunning world brought to life with breathtaking visuals and an epic soundtrack.</p>
-        <p>Accept your destiny, become a legend, and save your love in "Samurai Cat: Soul Rescue!"</p>
+        <p>Accept your destiny, become a legend, and save your love in &quot;Samurai Cat: Soul Rescue!&quot;</p>
       </div>
     )
   },
@@ -304,8 +303,8 @@ export const gameSpecificData: gameSpecifics = {
     description: (
       <div className="text-customWhite leading-[30px] uppercase text-[14px] lg:text-(length:--font-sm)">
         <p>Have you ever dreamed of running your own bar? In our game, you have the chance to become a true bar master! Serve drinks to your customers — from simple beers to complex cocktails. Show off your drink-mixing skills!</p>
-        <p>Don't forget one of the most important parts of the game — customizing your bar. Renovate and upgrade your venue by purchasing new items and creating a cozy atmosphere. From chairs and tables to unique decor, your bar will become the hottest spot in town!</p>
-        <p>But that's not all! Travel the world and discover new locations. Buy old bars, restore them, and expand your drink menu. With every new bar, your network grows, and your skills improve.</p>
+        <p>Don&apos;t forget one of the most important parts of the game — customizing your bar. Renovate and upgrade your venue by purchasing new items and creating a cozy atmosphere. From chairs and tables to unique decor, your bar will become the hottest spot in town!</p>
+        <p>But that&apos;s not all! Travel the world and discover new locations. Buy old bars, restore them, and expand your drink menu. With every new bar, your network grows, and your skills improve.</p>
         <p>Game Features:</p>
         <ul className="list-disc pl-6">
           <li><p>Drink Mixing: Serve everything from beer to sophisticated cocktails</p></li>

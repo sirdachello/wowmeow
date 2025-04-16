@@ -302,7 +302,7 @@ export default function Privacy() {
             <h2>Waiver of rights</h2>
             <p>
               If we fail to exercise any of our rights set forth in this terms
-              this doesn't set any basis to waive such rights in future. Any
+              this doesn&apos;t set any basis to waive such rights in future. Any
               rights can be only waived by us only if we declare such waiving in
               written form signed by us.
             </p>

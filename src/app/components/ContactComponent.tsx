@@ -12,11 +12,11 @@ export default function ContactComponent({
     <article className="bg-customBackground px-[20px] sm:px-[50px] md:px-[50px] lg:px-[80] xl:px-[150px] 2xl:px-[240px] pt-[40px] pb-[100px]    lg:pt-[80px] lg:pb-[200px] ">
       {contactsPage ? (
         <h1 className="text-customWhite mb-[40px] text-center text-(length:--font-lg) font-bold uppercase">
-          Let's Talk
+          Let&apos;s Talk
         </h1>
       ) : (
         <h2 className="text-customWhite mb-[40px] text-center text-(length:--font-lg) font-bold uppercase">
-          Let's Talk
+          Let&apos;s Talk
         </h2>
       )}
       <div className="flex flex-col-reverse items-center justify-between md:flex-row md:items-stretch">

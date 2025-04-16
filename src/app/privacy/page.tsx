@@ -343,7 +343,7 @@ export default function Privacy() {
             </p>
           </section>
           <section id="children-privacy">
-            <h2>CHILDREN'S PRIVACY</h2>
+            <h2>CHILDREN&apos;S PRIVACY</h2>
             <p>
               Our App is not intended for children under the age of 18.
               Therefore, we do not knowingly collect or solicit any personal
