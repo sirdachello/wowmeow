@@ -14,7 +14,7 @@ export default function GameCard({ game }: { game: ourGamesBlockGame }) {
       className={`${styles.embla__slide} flex justify-center px-[10px]`}
     >
       <div
-        className={`${styles.embla__slide__innerCard} bg-customGray w-[280px] max-w-[440px] [clip-path:polygon(0_0,100%_0,100%_100%,0_98%)] md:h-[588px] md:w-[440px]`}
+        className={`${styles.embla__slide__innerCard} bg-customGray w-[280px] max-w-[440px] [clip-path:polygon(0_0,100%_0,100%_100%,0_98%)]  md:w-[440px]`}
       >
         <div className="relative [clip-path:polygon(0_0,100%_0,100%_96%,0_100%)]">
           <Image src={game.image.src} alt={game.image.alt} />
@@ -51,21 +51,17 @@ export default function GameCard({ game }: { game: ourGamesBlockGame }) {
             </div>
           )}
         </div>
-        <div className="flex min-h-[220px] flex-col items-center gap-[20px] px-[20px] py-[20px] md:gap-[40px] md:px-[40px] md:py-[30px]">
-          <p className="md:leading-[30px]">
-            {" "}
-            {game.description.split("\n").map((line, index) => (
-              <span key={index}>
-                {line}
-                <br />
-              </span>
-            ))}
-          </p>
-          <div className="absolute bottom-6 md:bottom-12">
+        <div className="flex md:h-[280px] flex-col items-center gap-[20px] px-[20px] py-[20px] md:gap-[40px] md:px-[40px] md:py-[30px]">
+          <div style={{maxHeight: '120px', overflow: 'hidden'}}>
+              {game.description.split("\n").map((line, index) => (
+                <span className="block md:leading-[30px]" key={index}>
+                  {line}
+                </span>
+              ))}
+          </div>
             <Link href={`games/${game.id}`}>
               <MoreButton />
             </Link>
-          </div>
         </div>
       </div>
     </div>
