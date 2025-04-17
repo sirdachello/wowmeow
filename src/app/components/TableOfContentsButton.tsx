@@ -31,7 +31,7 @@ const isSafari = /^((?!chrome|crios|fxios).)*safari/i.test(navigator.userAgent);
           </ol>
         </nav>
 
-        <div className={`fixed right-[40px] ${(isIOS && isSafari) ? "bottom-[80px]" : "bottom-[60px]" } bg-red-700 z-[3]`}>
+        <div className={`fixed right-[40px] ${(isIOS && isSafari) ? "bottom-[100px]" : "bottom-[60px]" } z-[3]`}>
           <Hamburger
             toggled={open}
             toggle={setOpen}
@@ -41,7 +41,7 @@ const isSafari = /^((?!chrome|crios|fxios).)*safari/i.test(navigator.userAgent);
           />
         </div>
       </div>
-      <div className={`fixed right-[40px] ${(isIOS && isSafari) ? "bottom-[80px]" : "bottom-[60px]" } z-[3] bg-customGray-dark/[50%] rounded-[50%]`}>
+      <div className={`fixed right-[40px] ${(isIOS && isSafari) ? "bottom-[100px]" : "bottom-[60px]" } z-[3] bg-customGray-dark/[50%] rounded-[50%]`}>
         <Hamburger
           toggled={open}
           toggle={setOpen}
