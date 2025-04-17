@@ -1,11 +1,11 @@
 import Link from "next/link";
-import "../components/styles/privacystyles.css";
+import styles from "../components/styles/privacystyles.module.css";
 import TableOfContentsButton from "../components/TableOfContentsButton";
 import { termsLinks } from "../lib/termsLinks";
 
 export default function Privacy() {
   return (
-    <article className="bg-customWhite text-customBlack 950:px-[70px] 1300:px-[150px] 1900:px-[240px] relative px-[40px] pt-[80px] pb-[100px]">
+    <article className={`${styles.privacyRoot}  text-customBlack 950:px-[70px] 1300:px-[150px] 1900:px-[240px] relative px-[40px] pt-[80px] pb-[100px]`}>
       <h1 className="mb-[45px] text-center text-(length:--font-md) font-bold uppercase md:text-(length:--font-lg)">
         Terms and Conditions
       </h1>
@@ -302,9 +302,9 @@ export default function Privacy() {
             <h2>Waiver of rights</h2>
             <p>
               If we fail to exercise any of our rights set forth in this terms
-              this doesn&apos;t set any basis to waive such rights in future. Any
-              rights can be only waived by us only if we declare such waiving in
-              written form signed by us.
+              this doesn&apos;t set any basis to waive such rights in future.
+              Any rights can be only waived by us only if we declare such
+              waiving in written form signed by us.
             </p>
           </section>
           <section id="suspension-termination">

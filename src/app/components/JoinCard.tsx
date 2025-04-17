@@ -6,7 +6,7 @@ import catGamerThumbsUp from "public/images/AboutPage/Cats/catGamerThumbsUp.png"
 
 export default function JoinCard() {
     return (
-        <Link href={"/"}>
+        <Link href={"/contacts"}>
         <div
           className="bg-customBlack absolute top-[50%] left-[50%] z-[1] h-[200px] w-[160px] translate-x-[-50%] translate-y-[-50%] transition-all duration-200 [clip-path:polygon(3%_3%,100%_0,97%_97%,0_100%)]  sm:h-[293px] sm:w-[220px] lg:h-[386px] lg:w-[331px]"
         ></div>

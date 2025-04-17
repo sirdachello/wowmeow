@@ -1,10 +1,10 @@
-import "../components/styles/privacystyles.css";
+import styles from "../components/styles/privacystyles.module.css";
 import TableOfContentsButton from "../components/TableOfContentsButton";
 import { privacyLinks } from "../lib/privacyLinks";
 
 export default function Privacy() {
   return (
-    <article className="bg-customWhite text-customBlack 950:px-[70px] 1300:px-[150px] 1900:px-[240px] relative px-[40px] pt-[80px] pb-[100px]">
+    <article className={`${styles.privacyRoot}  text-customBlack 950:px-[70px] 1300:px-[150px] 1900:px-[240px] relative px-[40px] pt-[80px] pb-[100px]`}>
       <h1 className="mb-[45px] text-center text-(length:--font-md) md:text-(length:--font-lg) font-bold uppercase">
         privacy Policy
       </h1>
