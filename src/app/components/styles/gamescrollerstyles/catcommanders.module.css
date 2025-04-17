@@ -20,7 +20,7 @@
   }
 
   .embla__slide:hover .embla__slide__inner {
-    transform: scale(1.2);
+    transform: scale(1.12);
   }
 
   .embla__slide:hover {

@@ -21,7 +21,7 @@
   }
 
   .embla__slide:hover .embla__slide__inner {
-    transform: scale(1.12);
+    transform: scale(1.1);
     
   }
 
@@ -36,7 +36,7 @@
 
   @media (min-width: 440px) {
     .embla .embla__container .embla__slide {
-      flex: 0 0 50% !important;
+      flex: 0 0 40% !important;
     }
   }
   @media (min-width: 640px) {
