@@ -57,6 +57,15 @@ export const employees: Employee[] = [
     catImage: GorelovCat,
     employeePhoto: Gorelov,
   },
+  
+  {
+    id: "11",
+    name: "Oleksandr Zhezher",
+    title: "Producer & Sound Designer",
+    short_title: 'Producer & SFX', 
+    catImage: ZhezherCat,
+    employeePhoto: Zhezher,
+  },
   {
     id: "3",
     name: "Maryna Bielik",
@@ -126,13 +135,5 @@ export const employees: Employee[] = [
     title: "Marketing 2D Artist",
     catImage: BeztsinnyyCat,
     employeePhoto: Beztsinnyy,
-  },
-  {
-    id: "11",
-    name: "Oleksandr Zhezher",
-    title: "Producer & Sound Designer",
-    short_title: 'Producer & SFX', 
-    catImage: ZhezherCat,
-    employeePhoto: Zhezher,
-  },
+  }
 ];

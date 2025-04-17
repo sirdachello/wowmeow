@@ -10,10 +10,14 @@ export default function TableOfContentsButton({links}:{links: Link[]}) {
     setOpen((prev) => !prev);
   };
 
+
+const isIOS = /iP(ad|od|hone)/i.test(navigator.userAgent);
+const isSafari = /^((?!chrome|crios|fxios).)*safari/i.test(navigator.userAgent);
+
   return (
     <div className="min-950:hidden">
       <div
-        className={`transition-transform duration-300 ${open ? "translate-x-0" : "translate-x-[100%]"} bg-customBlack text-customWhite fixed top-0 right-0 z-[55] h-[100vh] w-fit p-8`}
+        className={`transition-transform duration-300 ${open ? "translate-x-0" : "translate-x-[100%]"}  bg-customBlack text-customWhite fixed top-0 right-0 z-[55] h-[100vh] w-fit p-8`}
       >
         <nav role="section-navigation">
           <ol className="list-decimal pl-6 text-[12px] underline">
@@ -27,7 +31,7 @@ export default function TableOfContentsButton({links}:{links: Link[]}) {
           </ol>
         </nav>
 
-        <div className="fixed right-[40px] bottom-[40px] z-[3]">
+        <div className={`fixed right-[40px] ${(isIOS && isSafari) ? "bottom-[80px]" : "bottom-[60px]" } bg-red-700 z-[3]`}>
           <Hamburger
             toggled={open}
             toggle={setOpen}
@@ -37,7 +41,7 @@ export default function TableOfContentsButton({links}:{links: Link[]}) {
           />
         </div>
       </div>
-      <div className="fixed right-[40px] bottom-[40px] z-[3] bg-customGray-dark/[50%] rounded-[50%]">
+      <div className={`fixed right-[40px] ${(isIOS && isSafari) ? "bottom-[80px]" : "bottom-[60px]" } z-[3] bg-customGray-dark/[50%] rounded-[50%]`}>
         <Hamburger
           toggled={open}
           toggle={setOpen}
