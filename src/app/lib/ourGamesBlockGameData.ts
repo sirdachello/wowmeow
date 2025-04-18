@@ -23,7 +23,7 @@ export const ourGamesBlockInfo: ourGamesBlockGame[] = [
   {
     id: "cybercats",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+      "CyberCats World - The First Cozy-Cyberpunk RPG!",
     image: {
       src: cyberCatsThumb,
       alt: 'A group of characters from "Cybercats: World"',
@@ -33,7 +33,7 @@ export const ourGamesBlockInfo: ourGamesBlockGame[] = [
   {
     id: "samuraicat",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+      "Welcome to the mystical world of Samurai Cat. In this thrilling survival game, you'll step into the paws of a brave samurai cat on an adventure to rescue his beloved, who has been kidnapped by sinister demons.",
     image: {
       src: samuraiCatThumb,
       alt: "logo of Samurai cat with monsters on the background",
@@ -43,7 +43,7 @@ export const ourGamesBlockInfo: ourGamesBlockGame[] = [
   {
     id: "catcommanders",
     description:
-      `THE CAT WAR BEGINS! \n Battle cats in tanks are ready to smash everything! \n Build your steel army, crush enemies, and become the top commander!`,
+      `Lead an army of charismatic feline commanders in thrilling tactical battles! Build your base, upgrade your tanks, and conquer the raid map. Your strategies will determine the outcome of every battle!`,
     image: {
       src: catCommandersThumb,
       alt: 'Two military-looking feline characters from "cat commanders: tank wars"',
@@ -53,7 +53,7 @@ export const ourGamesBlockInfo: ourGamesBlockGame[] = [
   {
     id: "drinkmaster",
     description:
-      `Have you ever dreamed of owning your own bar? \n In our game, you have the chance to become a true bar master!`,
+      `Have you ever dreamed of running your own bar? In our game, you have the chance to become a true bar master! Show off your drink-mixing skills!`,
     image: {
       src: drinkMasterThumb,
       alt: 'logo for the game "Drink Master: Tap & serve"',
@@ -63,7 +63,7 @@ export const ourGamesBlockInfo: ourGamesBlockGame[] = [
   {
     id: "monstermerge",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+      "Do you enjoy watermelon-style game mechanics? Then you'll love this one!",
     image: {
       src: monsterBoxThumb,
       alt: 'logo for the game "Monsters in the box"',
