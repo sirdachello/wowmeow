@@ -1,8 +1,6 @@
 "use client";
 
-import Link from "next/link";
-import HeaderBackgroundImage from "./HeaderBackgroundImage";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import reviewBackground from "public/images/ServicesPage/ReviewsSection/reviewBG.png";
 import catReviewer from "public/images/ServicesPage/ReviewsSection/reviewCat.png";
 
