@@ -5,6 +5,7 @@ import ServicesHowWeWorkBlock from "../components/ServicesHowWeWorkBlock";
 import ServicesWhyUsBlock from "../components/ServicesWhyUsBlock";
 import ContactComponent from "../components/ContactComponent";
 import ServicesExamplesBlock from "../components/ServicesExamplesBlock";
+import ServicesReviewsBlock from "../components/ServicesReviewsBlock";
 
 export default function ServicesPage() {
   return (
@@ -19,6 +20,7 @@ export default function ServicesPage() {
       <ServicesHowWeWorkBlock />
       <ServicesWhyUsBlock />
       <ServicesExamplesBlock />
+      <ServicesReviewsBlock />
       <ContactComponent contactsPage={false} />
     </article>
   );

@@ -12,6 +12,7 @@ const alexandria = Alexandria({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://wowmeow.vercel.app'),
   title: "WoW Meow",
   description: "A game development studio providing end-to-end game creation, outsourcing, and outstaffing solutions.",
   keywords: [
@@ -77,11 +78,6 @@ export const metadata: Metadata = {
       }
     ],
   },
-
-  themeColor: '#FABF4B',
-
-
-
   robots: {
     index: true,
     follow: true,

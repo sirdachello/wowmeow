@@ -1,0 +1,17 @@
+.embla {
+  overflow: hidden;
+}
+.embla .embla__container {
+  display: flex;
+}
+.embla .embla__slide {
+  padding-inline: 20px !important;
+  justify-items: center !important;
+  flex: 0 0 100% !important;
+  min-width: 0 !important;
+}
+@media (min-width:1300px) {
+    .embla .embla__slide {
+        flex: 0 0 50% !important;
+      }
+}
