@@ -12,7 +12,7 @@ export default function ServicesExamplesBlock() {
 
         <div className="bg-customYellow mx-auto flex h-[55px] max-w-[320px] items-center justify-center [clip-path:polygon(0%_0,98%_0,100%_100%,0_100%)] sm:h-[66px] sm:max-w-[500px]">
           <h2 className="text-[25px] font-bold uppercase sm:text-[40px]">
-          environment art
+          Character art
           </h2>
         </div>
         <EmblaCarousel imageData={characterArtItems} direction="forward" />
