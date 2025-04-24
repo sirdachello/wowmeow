@@ -19,6 +19,7 @@
 
 # production
 /build
+wowmeow.zip
 
 # misc
 .DS_Store
