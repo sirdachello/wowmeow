@@ -9,7 +9,7 @@ export default function ContactComponent({
   contactsPage: boolean;
 }) {
   return (
-    <article className="bg-customBackground px-[20px] sm:px-[50px] md:px-[50px] lg:px-[80] xl:px-[150px] 2xl:px-[240px] pt-[40px] pb-[100px]    lg:pt-[80px] lg:pb-[200px] ">
+    <article id="contacts" className="bg-customBackground px-[20px] sm:px-[50px] md:px-[50px] lg:px-[80] xl:px-[150px] 2xl:px-[240px] pt-[40px] pb-[100px]    lg:pt-[80px] lg:pb-[200px] ">
       {contactsPage ? (
         <h1 className="text-customWhite mb-[40px] text-center text-(length:--font-lg) font-bold uppercase">
           Let&apos;s Talk

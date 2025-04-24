@@ -13,9 +13,9 @@ export default function GamesPage() {
       <GamesScroller />
       <OurGames />
       <section className="bg-customBackground px-[8vw] pt-[80px] pb-[100px] 2xl:px-[240px]">
-        <h1 className="text-customWhite mb-[40px] text-center text-(length:--font-lg) font-bold uppercase">
+        <h2 className="text-customWhite mb-[40px] text-center text-(length:--font-lg) font-bold uppercase">
           Updates
-        </h1>
+        </h2>
         <div className="flex flex-col gap-[40px] md:gap-[60px]">
           {[newsList[0], newsList[1]].map(news => <NewsBit key={news.title} info={news}/>)}
           <ReadMoreButton/>

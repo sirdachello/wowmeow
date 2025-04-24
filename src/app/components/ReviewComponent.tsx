@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import reviewBackground from "public/images/ServicesPage/ReviewsSection/reviewBG.png";
-import catReviewer from "public/images/ServicesPage/ReviewsSection/reviewCat.png";
+import catReviewer from "public/images/nav-catThumbsUp.png";
 
 export default function ReviewComponent({
   review,
@@ -41,7 +41,7 @@ export default function ReviewComponent({
           src={catReviewer}
           height={222}
           width={240}
-          alt="cat giving thumbs up"
+          alt="A cat in a baseball cap holding a controller, and giving thumbs up, clearly satisfied."
         />
       </div>
     </div>

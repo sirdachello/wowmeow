@@ -42,13 +42,13 @@ export default function HeaderGameLink({
         className="bg-customBlack/[70%] hover:bg-customYellow-highlight/[70%] bg-opa absolute top-1/2 left-0 ml-[10px] sm:ml-[20px] md:ml-[60px] flex h-[40px] w-[30px] sm:h-[75px] sm:w-[65px] translate-y-[-40%] cursor-pointer items-center justify-center transition-colors duration-200 [clip-path:polygon(0_0,100%_0,100%_100%,12%_100%)]"
         onClick={scrollPrevAction}
       >
-        <Image src={arrowPrev} alt="" width={18} />
+        <Image src={arrowPrev} alt="arrow previous" width={18} />
       </button>
       <button
         className="bg-customBlack/[70%] hover:bg-customYellow-highlight/[70%] bg-opa absolute top-1/2 right-0 mr-[10px] sm:mr-[20px] md:mr-[60px] flex h-[40px] w-[30px] sm:h-[75px] sm:w-[65px] translate-y-[-40%] cursor-pointer items-center justify-center transition-colors duration-200 [clip-path:polygon(0_0,100%_0,88%_100%,0_100%)]"
         onClick={scrollNextAction}
       >
-        <Image src={arrowNext} alt="" width={18} />
+        <Image src={arrowNext} alt="arrow next" width={18} />
       </button>
     </div>
   );
