@@ -86,8 +86,8 @@ export default function ContactForm() {
     };
 
     emailjs
-      .send("service_6waahub", "template_y94b11v", templateParams, {
-        publicKey: "48ajjCnYY08MIu_dl",
+      .send("service_5393f1l", "template_27ju2if", templateParams, {
+        publicKey: "ETLTZLZFKleutQ4r5",
       })
       .then(
         (response) => {

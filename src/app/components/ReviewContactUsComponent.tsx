@@ -20,17 +20,22 @@ export default function ReviewContactUsComponent() {
             }
           `}</style>
           <div className="max-w-[560px]">
-            <h3 className="mb-[10px] text-(length:--font-sm-plus) font-bold uppercase sm:mb-[30px] sm:text-(length:--font-md) text-balance">
+            <h3 className="mb-[10px] text-(length:--font-sm-plus) font-bold text-balance uppercase sm:mb-[30px] sm:text-(length:--font-md)">
               Want your testimonial to be here?
             </h3>
             <p className="leading-[25px] sm:leading-[30px]">
               The team at Wow Meow Games is always open to collaboration and
               ready to help you bring your most ambitious projects to life. If
-              you'd like to see your success featured on our site, let's work
-              together!
+              you&#39;d like to see your success featured on our site, let&#39;s
+              work together!
             </p>
             <p className="leading-[25px] sm:leading-[30px]">
-              <Link href={'#contacts'}><span className="hover:scale-105 transition-transform duration-200 inline-block px-4 bg-customBackground text-customYellow font-bold [clip-path:polygon(3%_8%,100%_0,97%_92%,0_100%)]">Contact us</span></Link> and let's start creating something great!
+              <Link href={"#contacts"}>
+                <span className="bg-customBackground text-customYellow inline-block px-4 font-bold transition-transform duration-200 [clip-path:polygon(3%_8%,100%_0,97%_92%,0_100%)] hover:scale-105">
+                  Contact us
+                </span>
+              </Link>{" "}
+              and let&#39;s start creating something great!
             </p>
           </div>
         </div>
