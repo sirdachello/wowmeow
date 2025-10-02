@@ -142,11 +142,11 @@ export default function ContactForm() {
       <div
         tabIndex={result !== null ? -1 : 0}
         aria-hidden={result === null ? false : true}
-        className={` relative mb-9 flex  flex-col gap-[35px] ${result !== null && "pointer-events-none opacity-0 select-none"}`}
+        className={`relative mb-9 flex flex-col gap-[35px] ${result !== null && "pointer-events-none opacity-0 select-none"}`}
       >
         <div className="relative pb-1">
           <label
-            className={`${styles.inputWrapper}  ${errors.email ? `${styles.error}` : ""}`}
+            className={`${styles.inputWrapper} ${errors.email ? `${styles.error}` : ""}`}
           >
             <input
               disabled={loading || result !== null}

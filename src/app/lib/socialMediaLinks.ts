@@ -1,11 +1,11 @@
 import linkedin_white from "public/images/icons/socials/linkedin-white.svg";
 import x_white from "public/images/icons/socials/x-white.svg";
 import facebook_white from "public/images/icons/socials/facebook-white.svg";
-import instagram_white from "public/images/icons/socials/instagram-white.svg";
+import artstation_white from "public/images/icons/socials/artstation_white.svg";
 import linkedin from "public/images/icons/socials/linkedin.svg";
 import x from "public/images/icons/socials/x.svg";
 import facebook from "public/images/icons/socials/facebook.svg";
-import instagram from "public/images/icons/socials/instagram.svg";
+import artstation from "public/images/icons/socials/artstation.svg";
 import { StaticImageData } from "next/image";
 
 type Media = {
@@ -18,19 +18,19 @@ type Media = {
     linkedin: "https://www.linkedin.com/company/100658080",
     x: "https://x.com/WowMeowGames",
     facebook: "https://www.facebook.com/people/WowMeowGames/61556235676212",
-    instagram: "https://www.instagram.com/wow_meow_games"
+    artstation: "https://www.artstation.com/wowmeowgames"
   }
 
   export const socialMediaLinks: Media[] = [
     { label: "LinkedIn", href: BASE_MEDIA_LINKS.linkedin, image: linkedin },
     { label: "Twitter", href: BASE_MEDIA_LINKS.x, image: x },
     { label: "Facebook", href: BASE_MEDIA_LINKS.facebook, image: facebook },
-    { label: "Instagram", href: BASE_MEDIA_LINKS.instagram, image: instagram },
+    { label: "ArtStation", href: BASE_MEDIA_LINKS.artstation, image: artstation},
   ];
 
   export const socialMediaLinksWhite: Media[] = [
     { label: "LinkedIn", href: BASE_MEDIA_LINKS.linkedin, image: linkedin_white },
     { label: "Twitter", href: BASE_MEDIA_LINKS.x, image: x_white },
     { label: "Facebook", href: BASE_MEDIA_LINKS.facebook, image: facebook_white },
-    { label: "Instagram", href: BASE_MEDIA_LINKS.instagram, image: instagram_white },
+    { label: "ArtStation", href: BASE_MEDIA_LINKS.artstation, image: artstation_white},
   ];
